@@ -20,7 +20,7 @@ struct Alumno {
     float promedio;
 };
 
-// Función para calcular el promedio de 5 notas
+// Funcion para calcular el promedio de 5 notas
 float calcularPromedio(const float notas[], int cantidad) {
     float suma = 0;
     for (int i = 0; i < cantidad; i++) {
@@ -31,7 +31,7 @@ float calcularPromedio(const float notas[], int cantidad) {
 
 int main() {
     int cantidad;
-    cout << "¿Cuántos alumnos desea evaluar?: ";
+    cout << "¿Cuantos alumnos desea evaluar?: ";
     cin >> cantidad;
     cin.ignore(); // Para usar getline sin errores
 
@@ -50,7 +50,7 @@ int main() {
         cout << "Segundo apellido: ";
         getline(cin, a.apellido2);
 
-        cout << "Cédula: ";
+        cout << "Cedula: ";
         cin >> a.cedula;
 
         cout << "Ciclo que cursa: ";
@@ -69,7 +69,7 @@ int main() {
     // Mostrar los resultados
     cout << "\n======= LISTA DE ALUMNOS CON PROMEDIO =======\n";
     cout << left << setw(30) << "Nombre completo"
-         << setw(12) << "Cédula"
+         << setw(12) << "Cedula"
          << setw(8)  << "Ciclo"
          << "Promedio" << endl;
 
